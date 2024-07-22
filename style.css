@@ -1,0 +1,209 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles for background and text color */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text */
+    line-height: 1.6;
+  }
+  
+  /* Center align container and sections */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Headers styling */
+  h1, h2, h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Bold and proud font */
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraphs styling */
+  p {
+    font-family: 'Calibri', 'Arial', sans-serif; /* Complementary and subtle font */
+    font-size: 25px;
+    line-height: 1.8;
+  }
+  
+  /* Navigation styling */
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #007bff; /* Blue on hover */
+  }
+  
+  /* Hero section styles */
+  .hero {
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 3.5rem;
+  }
+  
+  .hero p {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  /* About and Services section styles */
+  .about, .services {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .about h2, .services h2 {
+    font-size: 3rem;
+  }
+  
+  .about p, .services p {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Contact section styles */
+  .contact {
+    background-color: #6c757d; /* Dark gray background */
+    color: #fff; /* White text */
+    padding: 60px 0;
+    text-align: center;
+    font-size: 34px;
+  }
+
+  .contact-boxes {
+    height: fit-content;
+    max-width: fit-content;
+    font-size: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+  
+  .contact h2 {
+    font-size: 4rem;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* Quote Form styles */
+  .quote-form {
+    background-color: #fff; /* White background */
+    padding: 60px 0;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .quote-form h2 {
+    font-size: 2rem;
+  }
+  
+  .quote-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+.insurance-type {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+.manual {
+    height: 34px;
+    font-size: 25px;
+    max-width: 75px;
+}
+
+.coverage {
+    height: 34px;
+    font-size: 25px;
+    max-width: 300px;
+}
+
+.insurance-type {
+    height: 52px;
+    font-size: larger;
+}
+
+  .btn {
+    background-color: #2b00ff93;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 10px 10px;
+    cursor: pointer;
+  }
+  
+  /* Input and output styling */
+  input[type="number"],
+  input[type="range"] {
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+  }
+  
+  output {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    h1, h2, h3 {
+      font-size: 1.8rem;
+    }
+    .hero {
+      padding: 60px 0;
+    }
+    .about, .services, .contact {
+      padding: 40px 0;
+    }
+  }
+  

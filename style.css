@@ -140,9 +140,44 @@ p {
   font-size: 2rem;
 }
 
-input[type="range"] {
-  width: 100%;
+.coverage-input,
+.duration-input {
+  width: 80%;
+  margin: 0 auto;
 }
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  outline: none;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 114, 255, 0.3);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 114, 255, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 114, 255, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
 
 .manual-input {
   height: 43px;

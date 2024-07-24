@@ -59,6 +59,39 @@ coverageSlider.addEventListener('input', function() {
     coverageOutput.textContent = coverageManual.value;
 });
 
+// slidebar color change function
+function updateSliderColor(slider) {
+    const value = (slider.value - slider.min) / (slider.max - slider.min) * 100;
+    const glowIntensity = (value) / 100 * 30;
+    
+    const transitionPoint = value;
+    
+    // Dark green (0, 100, 0) to light green (144, 238, 144)
+    const r = Math.min(144, Math.round((144 * transitionPoint) / 100));
+    const g = Math.min(238, Math.round(100 + (138 * transitionPoint) / 100));
+    const b = Math.min(144, Math.round((144 * transitionPoint) / 100));
+    
+    const activeColor = `rgba(${r}, ${g}, ${b}, 1)`;
+    const inactiveColor = 'rgba(200, 200, 200, 0.3)';
+    
+    slider.style.background = `linear-gradient(to right, 
+        ${activeColor} 0%, 
+        ${activeColor} ${value}%, 
+        ${inactiveColor} ${value}%, 
+        ${inactiveColor} 100%)`;
+    slider.style.boxShadow = `${value}% 0 ${glowIntensity}px ${activeColor}`;
+}
+
+
+const sliders = document.querySelectorAll('input[type="range"]');
+sliders.forEach(slider => {
+    slider.addEventListener('input', function() {
+        updateSliderColor(this);
+    });
+    updateSliderColor(slider);
+});
+
+
 // Handles manual form submission for duration
 
 const durationManual = document.getElementById('duration-manual');

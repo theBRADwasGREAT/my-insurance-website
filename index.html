@@ -1,131 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Best Life Insurance</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Include any additional stylesheets or scripts here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Life Insurance</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header section -->
-  <header>
-    <div class="container">
-      <h1>Best Life Insurance</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Main content section -->
-  <main>
-    <!-- Hero section -->
-    <section id="home" class="hero">
-      <div class="container">
-        <h2>Protect Your Future with Best Life Insurance</h2>
-        <p>Get peace of mind with our comprehensive life insurance policies.</p>
-        <a href="#quote" class="btn">Get a Quote</a>
-      </div>
-    </section>
-
-    <!-- About section -->
-    <section id="about" class="about">
-      <div class="container">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque orci id elit volutpat aliquam.</p>
-      </div>
-    </section>
-
-    <!-- Services section -->
-    <section id="services" class="services">
-      <div class="container">
-        <h2>Our Services</h2>
-        <div class="service">
-          <h3>Life Insurance Policies</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque orci id elit volutpat aliquam.</p>
+    <header>
+        <div class="container">
+            <h1>Best Life Insurance</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <!-- Quote Generator -->
-        <section class="quote-form" id="quote">
-          <div class="container">
-            <h2>Get Your Life Insurance Quote</h2>
-            <form id="quote-form">
-              <div class="form-group">
-                <label for="age">Age:</label>
-                <input type="number" id="age" class="manual" name="age" min="18" max="100" required>
-              </div>
-              <div class="form-group">
-                <label for="insurance-type">Insurance Type:</label>
-                <select id="insurance-type" class="insurance-type" name="insurance-type" required>
-                  <option value="term">Term Insurance</option>
-                  <option value="whole-life">Whole Life Insurance</option>
-                  <option value="iul">Indexed Universal Life (IUL)</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="coverage">Coverage Amount:</label>
-                 <div id="coverage-manual-input" class="form-group">
-                <input type="number" id="coverage-manual" class="coverage" name="coverage-manual">
-              </div>
-                <div class="coverage-input">
-                  <input type="range" id="coverage-slider" name="coverage-slider" min="10000" max="1000000" step="10000" value="500000">
-                  <output for="coverage-slider" id="coverage-output">$500,000</output>
-                </div>
-              </div>
-             
-              <div id="coverage-duration" class="form-group hidden">
-                <label for="coverage-duration-slider">Coverage Duration (years):</label>
-                <div id="duration-manual-input" class="form-group hidden">
-                    <input type="number" id="duration-manual" class="manual" name="duration-manual">
-                  </div>
-                <input type="range" id="coverage-duration-slider" name="coverage-duration-slider" min="5" max="30" step="5" value="20">
-                <output for="coverage-duration-slider" id="coverage-duration-output">20 years</output>
-              </div>
-              <button type="submit" class="btn">Get Quote</button>
-            </form>
-          </div>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Protect Your Future with Best Life Insurance</h2>
+                <p>Get peace of mind with our comprehensive life insurance policies.</p>
+                <a href="#quote" class="btn">Get a Quote</a>
+            </div>
         </section>
-      </div>
-    </section>
 
-    <!-- Contact section -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <form action="#" method="POST">
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" class="contact-boxes" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" class="contact-boxes" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="message" style="flex-direction: column; display: flex;">Message:</label>
-            <textarea id="message" class="contact-boxes" name="message" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>We provide tailored life insurance solutions to protect what matters most to you.</p>
+            </div>
+        </section>
 
-  <!-- Footer section -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Best Life Insurance. All rights reserved.</p>
-    </div>
-  </footer>
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service">
+                    <h3>Life Insurance Policies</h3>
+                    <p>We offer a range of policies including Term, Whole Life, and Indexed Universal Life (IUL).</p>
+                </div>
 
-  <!-- Optional JavaScript -->
-  <!-- You can include JavaScript scripts here for interactive elements, form validation, etc. -->
-  <script src="script.js"></script>
+                <section id="quote" class="quote-form">
+                    <h2>Get Your Life Insurance Quote</h2>
+                    <form id="quote-form">
+                        <div class="form-group">
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age" min="18" max="100" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="insurance-type">Insurance Type:</label>
+                            <select id="insurance-type" name="insurance-type" required>
+                                <option value="term">Term Insurance</option>
+                                <option value="whole-life">Whole Life Insurance</option>
+                                <option value="iul">Indexed Universal Life (IUL)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="coverage">Coverage Amount:</label>
+                          <div id="coverage-manual-input" class="form-group">
+                            <input type="text" id="coverage-manual" class="manual-input" name="coverage-manual" placeholder="$500,000">
+                          </div>
+                          <div class="coverage-input">
+                            <input type="range" id="coverage-slider" name="coverage-slider" min="10000" max="1000000" step="10000" value="500000">
+                            <output for="coverage-slider" id="coverage-output">$500,000</output>
+                          </div>
+                        </div>
+                        <div id="coverage-duration" class="form-group">
+                          <label for="coverage-duration-slider">Coverage Duration (years):</label>
+                          <div id="duration-manual-input" class="form-group">
+                            <input type="text" id="duration-manual" class="manual-input" name="duration-manual" placeholder="20 years">
+                          </div>
+                          <div class="duration-input">
+                            <input type="range" id="coverage-duration-slider" name="coverage-duration-slider" min="5" max="50" step="5" value="20">
+                            <output for="coverage-duration-slider" id="coverage-duration-output">20 years</output>
+                          </div>
+                        </div>
+                        
+                        <button type="submit" class="btn">Get Quote</button>
+                    </form>
+                    <div id="quote-result" class="hidden"></div>
+                </section>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Best Life Insurance. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
